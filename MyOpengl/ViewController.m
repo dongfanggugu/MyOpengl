@@ -66,7 +66,7 @@
     
 //    self.baseEffect.light0.enabled = GL_TRUE;
     self.baseEffect.light0.enabled = YES;
-    self.baseEffect.light0.diffuseColor = GLKVector4Make(1.0f, 0.0f, 1.0f, 1.0f);
+    self.baseEffect.light0.diffuseColor = GLKVector4Make(1.0f, 0.0f, 0.0f, 1.0f);
     //第四个参数非0表示从该位置发散光线，0表示无穷远处光线的发射方向
     self.baseEffect.light0.position = GLKVector4Make(-1.0f, -1.0f, 0.5f, 0.0f);
    
