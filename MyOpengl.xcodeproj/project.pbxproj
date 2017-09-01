@@ -16,6 +16,11 @@
 		6560910F1F53FABA00C59A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6560910D1F53FABA00C59A8D /* LaunchScreen.storyboard */; };
 		6560911A1F53FABA00C59A8D /* MyOpenglTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 656091191F53FABA00C59A8D /* MyOpenglTests.m */; };
 		656091251F53FABA00C59A8D /* MyOpenglUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 656091241F53FABA00C59A8D /* MyOpenglUITests.m */; };
+		656091381F53FF1E00C59A8D /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 656091371F53FF1E00C59A8D /* sphere.obj */; };
+		6560913C1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6560913B1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.m */; };
+		6560913E1F5403C900C59A8D /* Earth512x256.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6560913D1F5403C900C59A8D /* Earth512x256.jpg */; };
+		656091411F57F48600C59A8D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656091401F57F48600C59A8D /* FirstViewController.m */; };
+		656091441F59059E00C59A8D /* sceneUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 656091431F59059E00C59A8D /* sceneUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		656091201F53FABA00C59A8D /* MyOpenglUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyOpenglUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656091241F53FABA00C59A8D /* MyOpenglUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOpenglUITests.m; sourceTree = "<group>"; };
 		656091261F53FABA00C59A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656091361F53FF1E00C59A8D /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		656091371F53FF1E00C59A8D /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		6560913A1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		6560913B1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		6560913D1F5403C900C59A8D /* Earth512x256.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth512x256.jpg; sourceTree = "<group>"; };
+		6560913F1F57F48600C59A8D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		656091401F57F48600C59A8D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		656091421F59059E00C59A8D /* sceneUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sceneUtil.h; sourceTree = "<group>"; };
+		656091431F59059E00C59A8D /* sceneUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sceneUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,8 @@
 		656090FB1F53FABA00C59A8D /* MyOpengl */ = {
 			isa = PBXGroup;
 			children = (
+				656091391F53FF2700C59A8D /* Kit */,
+				656091351F53FF1E00C59A8D /* Resources */,
 				656090FF1F53FABA00C59A8D /* AppDelegate.h */,
 				656091001F53FABA00C59A8D /* AppDelegate.m */,
 				656091021F53FABA00C59A8D /* ViewController.h */,
@@ -113,6 +129,8 @@
 				656091101F53FABA00C59A8D /* Info.plist */,
 				656091081F53FABA00C59A8D /* MyOpengl.xcdatamodeld */,
 				656090FC1F53FABA00C59A8D /* Supporting Files */,
+				6560913F1F57F48600C59A8D /* FirstViewController.h */,
+				656091401F57F48600C59A8D /* FirstViewController.m */,
 			);
 			path = MyOpengl;
 			sourceTree = "<group>";
@@ -141,6 +159,27 @@
 				656091261F53FABA00C59A8D /* Info.plist */,
 			);
 			path = MyOpenglUITests;
+			sourceTree = "<group>";
+		};
+		656091351F53FF1E00C59A8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6560913D1F5403C900C59A8D /* Earth512x256.jpg */,
+				656091361F53FF1E00C59A8D /* sphere.h */,
+				656091371F53FF1E00C59A8D /* sphere.obj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		656091391F53FF2700C59A8D /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				656091421F59059E00C59A8D /* sceneUtil.h */,
+				656091431F59059E00C59A8D /* sceneUtil.m */,
+				6560913A1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.h */,
+				6560913B1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.m */,
+			);
+			path = Kit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +293,8 @@
 			files = (
 				6560910F1F53FABA00C59A8D /* LaunchScreen.storyboard in Resources */,
 				6560910C1F53FABA00C59A8D /* Assets.xcassets in Resources */,
+				656091381F53FF1E00C59A8D /* sphere.obj in Resources */,
+				6560913E1F5403C900C59A8D /* Earth512x256.jpg in Resources */,
 				656091071F53FABA00C59A8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +321,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6560910A1F53FABA00C59A8D /* MyOpengl.xcdatamodeld in Sources */,
+				656091411F57F48600C59A8D /* FirstViewController.m in Sources */,
 				656091041F53FABA00C59A8D /* ViewController.m in Sources */,
+				6560913C1F53FF2F00C59A8D /* AGLKVertexAttribArrayBuffer.m in Sources */,
+				656091441F59059E00C59A8D /* sceneUtil.m in Sources */,
 				656091011F53FABA00C59A8D /* AppDelegate.m in Sources */,
 				656090FE1F53FABA00C59A8D /* main.m in Sources */,
 			);
@@ -520,6 +564,7 @@
 				6560912B1F53FABA00C59A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6560912C1F53FABA00C59A8D /* Build configuration list for PBXNativeTarget "MyOpenglTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +573,7 @@
 				6560912E1F53FABA00C59A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6560912F1F53FABA00C59A8D /* Build configuration list for PBXNativeTarget "MyOpenglUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +582,7 @@
 				656091311F53FABA00C59A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
